@@ -12,4 +12,5 @@ html.is-animating .transition-fade{
 
 html.is-leaving .transition-fade{
     opacity: 0;
+    transform: translateX(0);
 }
