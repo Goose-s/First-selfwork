@@ -23,7 +23,6 @@ body{
     background-color: black;
     margin: 0rem;
     overflow:scroll;
-    perspective: 10px;
 }
 a {
     text-decoration: none;
@@ -50,7 +49,6 @@ a {
     display: flex;
     height: 100vh;
     width: 100vw;
-    z-index: -1;
   }
   
   #menu-items {
@@ -169,8 +167,6 @@ a {
   }
   .about-col-1 img{
    width: 100%;
-   height: 100%;
-   object-fit: cover;
   }
   .about-col-2{
     flex-basis: 60%;
