@@ -213,3 +213,18 @@ a {
   .tab-content.active-tab{
     display: block;
   }
+  .home-button {
+    color: #8b8b8b;
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 50px;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    text-decoration: none;
+    transition: opacity 400ms ease;
+    display: flex;
+    justify-content:center;
+    bottom: 80px;
+    left: 50%;
+    position: fixed;
+  }
