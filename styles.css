@@ -22,7 +22,13 @@ body{
     width: 100vw;
     background-color: black;
     margin: 0rem;
-    overflow:scroll;
+    overflow-y:auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none ;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 a {
     text-decoration: none;
