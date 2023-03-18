@@ -1,5 +1,3 @@
-const swup = new Swup();
-
 const track = document.getElementById("image-track");
 
 const handleOnDown = e => {

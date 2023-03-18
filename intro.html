@@ -10,14 +10,60 @@
     <title>Home</title>
 </head>
 <body>
+<div class="wrapper">
     <div id="menu">
         <div id="menu-items">
           <div class="menu-item"><a href="index.html">Work</a></div>
-          <div class="menu-item"><a href="about.html">About</a></div>
-          <div class="menu-item"><a href="contact.html"> Contact Us</a></div>
+          <div class="menu-item"><a href="#about">About</a></div>
         </div>
         <div id="menu-background-pattern"></div>
         <div id="menu-background-image"></div>
-      </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="amir's photos/about.jpeg" draggable="false"></div>
+                <div class="about-col-2">
+                    <h1>Melikov Amir</h1>
+                    <h4 class="subtitle">Photographer, Producer, Hiker</h4>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="experience">
+                        <ul>
+                            <li><span>June 2021</span><br>Zaamin Ultra 21</li>
+                            <li><span>Oct 2021</span><br>Visit of the Beeline delegation and the Minister of Education</li>
+                            <li><span>Oct 2021</span><br>Conference FeedBack Pro</li>
+                            <li><span>March 2022</span><br>Training #GoSkillz</li>
+                            <li><span>May 2022</span><br>Zaamin Ultra 22</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Oct 2019 - Present</span><br>Silk Road UIT</li>
+                            <li><span>Nov 2022</span><br>Training in Taskent</li>
+                            <li><span>Dec 2022</span><br>Documentary Center</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabconten of tabcontent){
+                tabconten.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
