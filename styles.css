@@ -234,3 +234,10 @@ a {
     left: 50%;
     position: fixed;
   }
+
+  .constuction
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
